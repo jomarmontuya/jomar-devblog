@@ -1,9 +1,7 @@
 <svg width="117" height="110" viewBox="0 0 117 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M102.282 87.5128C84.385 102.427 66.8743 109.829 49.7503 109.719C32.6263 109.608 19.4242 102.151 10.1441 87.3471C0.863999 72.5431 -1.78746 53.2095 2.18973 29.3464C6.16692 5.48324 20.3633 -3.68639 44.7788 1.83748C69.1943 7.36136 89.3565 19.2929 105.265 37.6322C121.174 55.9715 120.18 72.5983 102.282 87.5128Z" fill="url(#paint0_linear)"/>
-<defs>
-<linearGradient id="paint0_linear" x1="0.399994" y1="0.279999" x2="0.399994" y2="109.72" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FF5F6D"/>
-<stop offset="1" stop-color="#FFC371"/>
-</linearGradient>
-</defs>
+<rect width="117" height="110" fill="black"/>
+<rect x="10.4" y="6.68042" width="96.2765" height="96.5002" fill="white"/>
+<rect x="11.6564" y="7.78247" width="93.9206" height="94.1388" fill="black"/>
+<rect x="12.2847" y="8.41211" width="92.6641" height="92.8795" fill="white"/>
+<path d="M75.579 16.4407H48.8506V65.9369L36.0004 93.263H58.1028L60.6728 91.7162L63.2428 89.6539L64.7848 88.6227L68.3829 86.0448L69.9249 84.498L71.4669 82.9513L74.037 80.3733L75.579 77.7954V75.2175V71.6084V16.4407Z" fill="black" stroke="white"/>
 </svg>

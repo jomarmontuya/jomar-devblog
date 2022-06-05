@@ -1,27 +1,16 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
-    es2021: true,
-    node: true
+    node: true,
   },
-  extends: ['plugin:react/recommended', 'next', 'standard'],
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    },
-    ecmaVersion: 12,
-    sourceType: 'module'
+    parser: 'babel-eslint',
   },
-  plugins: ['react'],
-  settings: {
-    react: {
-      version: 'detect'
-    }
-  },
+  extends: ['@nuxtjs', 'plugin:nuxt/recommended', 'prettier'],
+  // add your custom rules here
+  plugins: ['prettier'],
   rules: {
-    'react/prop-types': 'off'
+    'prettier/prettier': ['error'],
   },
-  globals: {
-    React: true
-  }
 }

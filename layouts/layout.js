@@ -1,14 +1,20 @@
 import Image from 'next/image'
 import Container from '@/components/Container'
 import TagItem from '@/components/TagItem'
-import { NotionRenderer, Equation, Code, Collection, CollectionRow } from 'react-notion-x'
+import {
+  NotionRenderer,
+  Equation,
+  Code,
+  Collection,
+  CollectionRow,
+} from 'react-notion-x'
 import BLOG from '@/blog.config'
 import formatDate from '@/lib/formatDate'
 import { useLocale } from '@/lib/locale'
 import { useRouter } from 'next/router'
 import Comments from '@/components/Comments'
 
-const mapPageUrl = id => {
+const mapPageUrl = (id) => {
   return 'https://www.notion.so/' + id.replace(/-/g, '')
 }
 
@@ -17,7 +23,7 @@ const Layout = ({
   blockMap,
   frontMatter,
   emailHash,
-  fullWidth = false
+  fullWidth = false,
 }) => {
   const locale = useLocale()
   const router = useRouter()
@@ -52,12 +58,12 @@ const Layout = ({
             <div className="mr-2 mb-4 md:ml-0">
               {formatDate(
                 frontMatter?.date?.start_date || frontMatter.createdTime,
-                BLOG.lang
+                BLOG.lang,
               )}
             </div>
             {frontMatter.tags && (
               <div className="flex flex-nowrap max-w-full overflow-x-auto article-tags">
-                {frontMatter.tags.map(tag => (
+                {frontMatter.tags.map((tag) => (
                   <TagItem key={tag} tag={tag} />
                 ))}
               </div>
@@ -73,7 +79,7 @@ const Layout = ({
                 equation: Equation,
                 code: Code,
                 collection: Collection,
-                collectionRow: CollectionRow
+                collectionRow: CollectionRow,
               }}
               mapPageUrl={mapPageUrl}
             />
