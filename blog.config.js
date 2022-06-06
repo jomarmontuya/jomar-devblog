@@ -2,7 +2,7 @@ const BLOG = {
     title: 'Joms',
     author: 'Jomar Montuya',
     email: 'jomar.montuya@outlook.com',
-    link: 'https://nobelium.vercel.app',
+    link: 'https://joms.vercel.app',
     description: 'Personal Development Blog.',
     lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
     appearance: 'auto', // ['light', 'dark', 'auto'],
@@ -16,7 +16,7 @@ const BLOG = {
     showAbout: true,
     showArchive: true,
     autoCollapsedNavBar: false, // The automatically collapsed navigation bar
-    ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
+    ogImageGenerateURL: 'https://joms.vercel.app', // The link to generate OG image, don't end with a slash
     socialLink: 'https://www.linkedin.com/in/jomar-m-667a32110/',
     seo: {
         keywords: ['Blog', 'Web Development', 'NextJs', 'VueJs', 'React'],
